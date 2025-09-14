@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./../assets/fonts/Inter-VariableFont_slnt,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-neutral: oklch(100% 0.00011 271.152);
+  --color-primary: oklch(91.127% 0.21624 123.808);
+  --color-grey-700: oklch(32.109% 0.00004 271.152);
+  --color-grey-800: oklch(23.929% 0.00003 271.152);
+  --color-grey-900: oklch(19.125% 0.00002 271.152);
+  --font-general: "Inter", sans-serif;
+  --fs-xs: 0.875rem; /* 14px */
+  --fs-sm: 1rem; /* 16px */
+  --fs-md: 1.125rem; /* 18px */
+  --fs-lg: 1.5rem; /* 24px */
+  --fs-sub: 1.75rem; /* 28px */
+  --fs-xl: 1.875rem; /* 30px */
+  --fs-2xl: 2.25rem; /* 36px */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.5rem; /* 24px */
+  --space-6: 2rem; /* 32px */
+  --space-7: 3rem; /* 48px */
+  --space-8: 4rem; /* 64px */
+  --space-9: 6rem; /* 96px */
+}
+body {
+  font-family: var(--font-general);
+}
