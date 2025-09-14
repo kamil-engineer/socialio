@@ -43,9 +43,48 @@
 
     <title>Social links | Jessica Randall</title>
 
-    <link rel="stylesheet" preload href="style/style.css" />
-  </head>
+      <link rel="preload" href="style/style.css" as="style" />
+  <link rel="stylesheet" href="style/style.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="style/style.css" /></noscript>
+
+  <link rel="preload" href="./assets/fonts/Inter-VariableFont_slnt,wght.ttf" as="font" type="font/ttf" crossorigin />
   <body>
-    <h1>asd</h1>
+    <div class="container">
+      <main class="profile">
+        <figure class="profile__image">
+          <img
+            src="./assets/images/avatar-jessica.jpeg"
+            alt="Jessica Randall"
+            class="profile__avatar"
+            height="83"
+            width="83"
+            fetchpriority="high"
+          />
+        </figure>
+        <h1 class="profile__name">Jessica Randall</h1>
+        <span class="profile__place"> London, United Kingdom </span>
+        <p class="profile__description">
+          “Front-end developer and avid reader.”
+        </p>
+
+        <ul class="profile__socials">
+          <li>
+            <a href="#" class="link link--social"> GitHub </a>
+          </li>
+          <li>
+            <a href="#" class="link link--social"> Frontend Mentor </a>
+          </li>
+          <li>
+            <a href="#" class="link link--social"> LinkedIn </a>
+          </li>
+          <li>
+            <a href="#" class="link link--social"> Twitter </a>
+          </li>
+          <li>
+            <a href="#" class="link link--social"> Instagram </a>
+          </li>
+        </ul>
+      </main>
+    </div>
   </body>
 </html>
